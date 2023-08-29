@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/categorias.css') }}"  type= "text/css">
+    <link rel="shortcut icon" href="{{url_for('static', filename='styles/logo-s.png')}}">
+    <title>SUPLYMAX | {{name.cat_name}}</title>
+</head>
+<body>
+    <header>
+        <ul class="header-ul-container">
+            <li><a href="/" class="btn-volver">Inicio</a></li>
+			<input type="text" name="p_search" placeholder="Buscar producto" class="buscar-input" id="buscador" autocomplete="off">
+        </ul>
+    </header>
+    <h1 class="texto-principal">Bienvenido a la seccion de {{name.cat_name}}</h1>
+    <div class="seccion_productos">
+        <ul class="contenedor_productos">
+            {% for y in products_find %}
+                <li class="contenedor_producto" id="producto">
+                    <div class="img_producto">
+                        <img src="https://res.cloudinary.com/degdcver8/image/upload/v1693325885/{{y.file_name}}.png" alt="{{y.file_name}}">
+                    </div>
+                    <div class="info_producto">
+                        <h2>{{y.p_name}}</h2>
+                        <h2>{{y.p_price}}$</h2>
+                        <a href=/product/{{y._id}} class="ver_mas">Ver mas</a>
+                    </div>
+                </li>
+            {% endfor %}
+        </ul>
+    </div>
+    <script src="{{ url_for('static', filename='scripts/scripts.js') }}"></script>
+</body>
+</html>

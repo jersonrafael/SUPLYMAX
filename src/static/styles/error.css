@@ -1,0 +1,12 @@
+.btn-volver{
+    transition: 0.3s;
+    text-decoration: none;
+    color: gray;
+    padding: 0.5rem 1rem;
+}
+
+.btn-volver{
+    transition: 0.3s;
+    color: black;
+    border-bottom: 1px solid black;
+}

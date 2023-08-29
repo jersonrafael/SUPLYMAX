@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Airbnb";
+}
+
+@font-face {
+  font-family: "Airbnb";
+  src: url("AirbnbCereal_W_Md.otf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+/* CLASE HEADER */
+
+header {
+  /* border-bottom: 1px solid gray; */
+  padding: 1rem 0;
+
+  box-shadow: 0px 0px 7px -2px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0px 0px 7px -2px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 7px -2px rgba(0, 0, 0, 0.75);
+}
+
+/* ESTILOS BOTON VOLVER */
+ul li {
+  /* margin-top: 1rem; */
+}
+
+.btn_volver {
+  transition: 0.3s;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  color: gray;
+  margin: 0rem 2rem;
+}
+
+.btn_volver:hover {
+  transition: 0.3s;
+  
+  color: black;
+  
+  border-bottom: 1px solid black;
+}
+
+/* ESTILOS PRODUCTO */
+
+.contenedor_principal {
+  display: flex;
+  justify-content: center;
+  
+  margin-top: 2rem;
+}
+
+.img_product_container{
+  width: 100%;
+  height: 45%;
+
+  margin-top: 1rem;
+}
+
+.img_product_container img{
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+}
+
+.n_producto{
+  margin: 0 15%;
+}
+
+.cat_producto {
+  margin: 0 15%;
+  text-decoration: none;
+  color: black;
+  border-bottom: 1px solid black;
+}
+
+.info_producto {
+  margin: 1rem 2rem;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+
+  box-shadow: 0px 0px 7px -2px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0px 0px 7px -2px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 7px -2px rgba(0, 0, 0, 0.75);
+}
+
+@media only screen and (max-width: 600px){
+  .info_producto{
+
+    padding: 0.5rem 0.5rem;
+    font-size: 16px;
+  }
+}
