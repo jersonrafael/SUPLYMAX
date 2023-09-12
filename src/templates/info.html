@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static', filename='styles/info.css')}}">
+    <title>SUPLYMAX</title>
+</head>
+<body>
+    <div class="general_contain">
+        <div class="contain_upper">
+            <img src="{{url_for('static', filename='styles/icons/suplymax.png')}}" alt="" class="img_suplymax">
+        </div>
+
+        <h2 class="text_h2">Todo nuestro catalogo de productos actualizado disponible todos los días</h2>
+
+        <div class="container_mid">
+            <img src="{{url_for('static', filename='styles/icons/caja.png')}}" alt="" class="img_caja">
+        </div>
+
+        <div class="container_bottom">
+            <a href="{{url_for('home')}}" class="text_a">Ir al catalogo</a>
+        </div>
+   </div>
+</body>
+</html>

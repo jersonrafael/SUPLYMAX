@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static',filename='styles/allcategorys.css')}}">
+    <title>SUPLYMAX</title>
+</head>
+<body>
+
+    <header class="header">
+        <a href="{{url_for('home')}}" class="btn_volver">
+            <p>Volver</p>
+            <img src="{{url_for('static', filename='styles/icons/casa.png')}}" alt="" class="img">
+        </a>
+    </header>
+    
+    <div class="cotainer">
+        <div class="category_container">
+            {% for x in categorys%}
+                <a href="/category/{{x._id}}" class="category">{{x.cat_name}}</a>
+            {%endfor%}
+        </div>
+    </div>
+</body>
+</html>

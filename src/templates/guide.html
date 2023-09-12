@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static', filename='styles/guide.css')}}">
+    <title>SUPLYMAX</title>
+</head>
+<body>
+   <div class="general_contain">
+        <div class="contain_upper">
+            <img src="{{url_for('static', filename='styles/icons/suplymax.png')}}" alt="" class="img_suplymax">
+        </div>
+
+        <h2 class="text_h2">Con nuestra app podrás encontrar todo lo que estas buscando al alcance tu mano</h2>
+
+        <div class="container_mid">
+            <img src="{{url_for('static', filename='styles/icons/feliz.png')}}" alt="" class="img_feliz">
+        </div>
+
+        <div class="container_bottom">
+            <a href="{{url_for('info')}}" class="text_a">Siguiente</a>
+        </div>
+   </div>
+</body>
+</html>

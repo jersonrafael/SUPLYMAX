@@ -1,0 +1,82 @@
+@font-face {
+    font-family: "Airbnb";
+    src: url("AirbnbCereal_W_Md.otf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+  }
+  
+  * {
+    font-family: Airbnb;
+  }
+  
+  /* GENERAL */
+  
+  body {
+    display: flex;
+    justify-content: center;
+    background-color: #f6a00f;
+  }
+  
+  .general_contain {
+    background-color: white;
+    padding: 1rem 0;
+
+    border-radius: 12px;
+  }
+  
+  /* TEXT */
+  
+  .text_h2 {
+    text-align: center;
+    font-size: 1rem;
+
+  }
+  
+  .text_a{
+    text-decoration: none;
+    color: #ffff;
+    background-color: #f6a00f;
+
+    padding: 0.5rem 1rem;
+    border-radius: 12px;
+  }
+  
+  /* CONTAINERS IMG */
+  
+  .contain_upper,
+  .container_mid {
+    display: flex;
+    justify-content: center;
+  }
+  
+  /* IMG */
+  
+  .img_suplymax,
+  .img_caja {
+    width: 30%;
+    height: 100%;
+    object-fit: contain;
+  }
+  
+  /* CONTAINER BOTTOM */
+  
+  .container_bottom {
+    margin: 1rem 0;
+  
+    display: flex;
+    justify-content: center;
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .img_suplymax{
+      width: 100%;
+    }
+    .img_caja {
+      width: 80%;
+    }
+  
+    .general_contain{
+      margin: 10% 1%;
+    }
+  }
+  
